@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="/CSS file/Four4CMe.css">
+    <style>
+        body {
+            background-image: url(/Images/hompage.jpeg);
+            font-family: Arial, sans-serif;
+            margin: 300px;
+            padding: 0;
+            background-color: beige;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 10px;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+
+        #hover:hover h3 {
+            display: block;
+            background-color: beige;
+        }
+
+        a:active{
+            background-color: rgba(128, 0, 98, 0.599);
+         }
+
+         @keyframes spin {
+    0%      { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+
+    25%
+        {background-color: rgba(97, 216, 177, 0.005);
+        left: 500px;
+        top: 0px;
+
+    }
+
+    50% {
+        background-color: beige;
+        left: 500px;
+        top: 500px;
+    }
+
+    75% {
+        background-color: beige;
+        left: 0px;
+        top: 500px;
+
+    }
+
+    100% {
+        background-color: beige;
+        left: 0px;
+        top: 0px;
+    }
+
+}
+h1{
+   color: #333;
+   animation-name: spin;
+   animation-duration: 6s;
+   animation-delay: 2s;
+   position: relative;
+   animation-iteration-count: 4;
+   animation-direction: alternate;
+}
+
+/* media quer */
+@media screen and (max-width:700px) {
+    body{
+        background-color: rgb(250, 230, 247);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+    <div id="hover">
+         <h1>Four4CMe   Four4CMe   Four4CMe</h1>
+            <p>Four4USBYUS!</p>
+
+    </div>
+    </header>
+    <nav>
+        <a href="/index.html">Home Page</a>
+        <a href="/Html files/aboutPage.html">About Us</a>
+        <a href="/Html files/productPage.html">Products</a>
+        <a href="/Html files/adminPage.html">Admin</a>
+        <a href="/Html files/contactPage.html">Contact Us</a>
+    </nav>
+        <div class="product">
+                <h2>Ethically sourced products/items.</h2>
+                <h3>Price ranges from R80 - R500</h3>
+        </div> 
+
+    <footer> 
+        &copy; 2023 NtandoNokilana
+    </footer>
+    </body>
+</body>
+</html>
